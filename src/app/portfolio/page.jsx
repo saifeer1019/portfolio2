@@ -1,8 +1,8 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
+import ReactPlayer from 'react-player';
 
 const items = [
   {
@@ -10,7 +10,7 @@ const items = [
     color: "from-red-300 to-blue-300",
     title: "Mern News Site",
     desc: "I used a MERN Stack to create a news site with full CRUD functionality and authentication. I used a classic red, black and white palette to accent the site. We have diferrent categories and subcategories to navigate through the site. I set up an API to get weather updates on Rajshahi since that is where the majority of our reader are based on.",
-    img: "/Natun Provat.PNG",
+    img: "/Natun Provat.mp4",
     link: "https://www.natunprovat.com",
   },
   {
@@ -18,7 +18,7 @@ const items = [
     color: "from-blue-300 to-violet-300",
     title: "Next.js Ecommerce Site",
     desc: "This is a ecommerce site I made using Next.js, TailwindCSS and MySQL. It is a site that allows you to buy and sell aquarium related items. It has categories, filtering, a shopping cart and a checkout process like any ecommerce site.",
-    img: "/RajAqua.PNG",
+    img: "/RajAqua.mp4",
     link: "https://rajshahiaquatics.com",
   },
   {
@@ -26,7 +26,7 @@ const items = [
     color: "from-violet-300 to-purple-300",
     title: "Next.js Tour Booking App",
     desc: "It is a simple site for booking tours to visit the Sundarbans, Made with Next.js, TailwindCSS and MySQL, my favourite combo. The customer tracks the booking status thgrough order Id's. It was one my first sites so it is very dear to me. The client does not use it anymore.",
-    img: "/Insaniat.PNG",
+    img: "/Insaniat.mp4",
     link: "https://insaniat.vercel.app/",
   },
   {
@@ -34,7 +34,7 @@ const items = [
     color: "from-purple-300 to-red-300",
     title: "Dhaka Dosts Social Media React App ",
     desc: "Made with the MERN Stack . It is more like a sample of my CRUD capabilites. You can make a profile and do basic posting and commenting",
-    img: "/Dhaka.PNG",
+    img: "/dhakadosts.mp4",
     link: "https://dhakadosts.vercel.app/",
   },
 ];
@@ -69,7 +69,13 @@ const PortfolioPage = () => {
                     {item.title}
                   </h1>
                   <div className="relative w-full h-56 md:w-[38vw] md:h-[40vh] ">
-                    <Image src={item.img} alt="" layout="fill" objectPosition="center" />
+                    <ReactPlayer 
+                      url={item.img}
+                      className='react-player'
+                      width='100%'
+                      height='100%'
+                      controls={true}
+                    />
                   </div>
                   <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
