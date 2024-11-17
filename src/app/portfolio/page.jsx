@@ -10,7 +10,7 @@ const items = [
     color: "from-red-300 to-blue-300",
     title: "Mern News Site",
     desc: "I used a MERN Stack to create a news site with full CRUD functionality and authentication. I used a classic red, black and white palette to accent the site. We have diferrent categories and subcategories to navigate through the site. I set up an API to get weather updates on Rajshahi since that is where the majority of our reader are based on.",
-    img: "/Natun Provat.mp4",
+    img: "/natunprovat.mp4",
     link: "https://www.natunprovat.com",
   },
   {
@@ -26,7 +26,7 @@ const items = [
     color: "from-violet-300 to-purple-300",
     title: "Next.js Tour Booking App",
     desc: "It is a simple site for booking tours to visit the Sundarbans, Made with Next.js, TailwindCSS and MySQL, my favourite combo. The customer tracks the booking status thgrough order Id's. It was one my first sites so it is very dear to me. The client does not use it anymore.",
-    img: "/Insaniat.mp4",
+    img: "/insaniat.mp4",
     link: "https://insaniat.vercel.app/",
   },
   {
