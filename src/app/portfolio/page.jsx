@@ -26,7 +26,7 @@ const items = [
     color: "from-violet-300 to-purple-300",
     title: "Next.js Tour Booking App",
     desc: "It is a simple site for booking tours to visit the Sundarbans, Made with Next.js, TailwindCSS and MySQL, my favourite combo. The customer tracks the booking status thgrough order Id's. It was one my first sites so it is very dear to me. The client does not use it anymore.",
-    img: "/insaniat.mp4",
+    img: "/insanat.mp4",
     link: "https://insaniat.vercel.app/",
   },
   {
