@@ -37,6 +37,14 @@ const items = [
     img: "/dhakadosts.mp4",
     link: "https://dhakadosts.vercel.app/",
   },
+  {
+    id: 5,
+    color: "from-purple-300 to-red-300",
+    title: "University Management System ",
+    desc: "Made with Next.js, TailwindCSS and MySQL. It is a simple site for managing a university.  It has a dashboard for the admin and a login system. It is a simple site for managing a university. It has a dashboard for the admin and a login system.",
+    img: "/mbhec.mp4",
+    link: "https://mbhec.edu.bd/",
+  },
 ];
 
 const PortfolioPage = () => {
