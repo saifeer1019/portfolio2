@@ -49,8 +49,7 @@ const items = [
     id: 5,
     color: "from-purple-300 to-red-300",
     title: "Patient Management System ",
-    desc: "Built a patient management system using Next.js and TypeScript.Features include patient records management, appointment scheduling, and real-time updates. Designed with a modern UI/UX and responsive layout
-    ",
+    desc: "Built a patient management system using Next.js and TypeScript.Features include patient records management, appointment scheduling, and real-time updates. Designed with a modern UI/UX and responsive layout",
     img: "/phs.mp4",
     link: "https://patentmanagement.vercel.app
 ",
