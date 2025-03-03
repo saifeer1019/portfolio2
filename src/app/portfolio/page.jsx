@@ -15,14 +15,6 @@ const items = [
     link: "https://rajshahiaquatics.com",
   },
   {
-    id: 3,
-    color: "from-violet-300 to-purple-300",
-    title: "Next.js Tour Booking App",
-    desc: "It is a simple site for booking tours to visit the Sundarbans, Made with Next.js, TailwindCSS and MySQL, my favourite combo. The customer tracks the booking status thgrough order Id's. It was one my first sites so it is very dear to me. The client does not use it anymore.",
-    img: "/insanat.mp4",
-    link: "https://insaniat.vercel.app/",
-  },
-  {
     id: 4,
     color: "from-purple-300 to-red-300",
     title: "Dhaka Dosts Social Media React App ",
@@ -33,7 +25,7 @@ const items = [
   {
     id: 5,
     color: "from-purple-300 to-red-300",
-    title: "Patient Management System ",
+    title: "University Management System ",
     desc: "Made with Next.js, TailwindCSS and MySQL. It is a simple site for managing a university.  It has a dashboard for the admin and a login system. It is a simple site for managing a university. It has a dashboard for the admin and a login system.",
     img: "/mbhec.mp4",
     link: "https://mbhec.edu.bd/",
@@ -43,10 +35,10 @@ const items = [
     color: "from-purple-300 to-red-300",
     title: "Patient Management System ",
     desc: "Built a patient management system using Next.js and TypeScript.Features include patient records management, appointment scheduling, and real-time updates. Designed with a modern UI/UX and responsive layout",
-    img: "/phs.mp4",
-    link: "https://patentmanagement.vercel.app
-",
+    img: "/phs.mkv",
+    link: "https://patentmanagement.vercel.app"
   },
+  
   {
     id: 1,
     color: "from-red-300 to-blue-300",
@@ -54,7 +46,15 @@ const items = [
     desc: "I used a MERN Stack to create a news site with full CRUD functionality and authentication. I used a classic red, black and white palette to accent the site. We have diferrent categories and subcategories to navigate through the site. I set up an API to get weather updates on Rajshahi since that is where the majority of our reader are based on.",
     img: "/natunprovat.mp4",
     link: "https://www.natunprovat.com",
-  },
+    {
+      id: 3,
+      color: "from-violet-300 to-purple-300",
+      title: "Next.js Tour Booking App",
+      desc: "It is a simple site for booking tours to visit the Sundarbans, Made with Next.js, TailwindCSS and MySQL, my favourite combo. The customer tracks the booking status thgrough order Id's. It was one my first sites so it is very dear to me. The client does not use it anymore.",
+      img: "/insanat.mp4",
+      link: "https://insaniat.vercel.app/",
+    },
+  }
 ];
 
 const PortfolioPage = () => {
