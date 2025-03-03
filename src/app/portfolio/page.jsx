@@ -40,10 +40,20 @@ const items = [
   {
     id: 5,
     color: "from-purple-300 to-red-300",
-    title: "University Management System ",
+    title: "Patient Management System ",
     desc: "Made with Next.js, TailwindCSS and MySQL. It is a simple site for managing a university.  It has a dashboard for the admin and a login system. It is a simple site for managing a university. It has a dashboard for the admin and a login system.",
     img: "/mbhec.mp4",
     link: "https://mbhec.edu.bd/",
+  },
+    {
+    id: 5,
+    color: "from-purple-300 to-red-300",
+    title: "Patient Management System ",
+    desc: "Built a patient management system using Next.js and TypeScript.Features include patient records management, appointment scheduling, and real-time updates. Designed with a modern UI/UX and responsive layout
+    ",
+    img: "/phs.mp4",
+    link: "https://patentmanagement.vercel.app
+",
   },
 ];
 
