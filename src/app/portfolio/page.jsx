@@ -1,60 +1,69 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 import ReactPlayer from 'react-player';
 
 const items = [
 
+
+
   {
     id: 2,
+    color: "from-violet-300 to-purple-300",
+    title: "Next.js Video Calling App",
+    desc: "Next.js app with Clerk authentication and Stream video integration. Features seamless video communication, user account management, and intuitive controls. Optimized for multi-user sessions with reliable performance. Independently built and deployed on Vercel.",
+    img: "",
+    image:'/video call.JPG',
+    link: "https://chattyyoom.vercel.app",
+  },
+  {
+    id: 3,
+    color: "from-purple-300 to-red-300",
+    title: "University Management System ",
+    desc: "Comprehensive University Management Website: Next.js app with MongoDB and Auth0. Features faculty profiles, online payments, admissions, attendance tracking with SMS, and notice board. Full admin dashboard for complete system management.",
+    img: "/university.mov",
+    image:'',
+    link: "https://mbhec.edu.bd/",
+  },
+  {
+    id: 1,
     color: "from-blue-300 to-violet-300",
     title: "Next.js Ecommerce Site",
     desc: "This is a ecommerce site I made using Next.js, TailwindCSS and MySQL. It is a site that allows you to buy and sell aquarium related items. It has categories, filtering, a shopping cart and a checkout process like any ecommerce site.",
-    img: "/RajAqua.mp4",
+    img: "/ecom.mp4",
+    image:'',
     link: "https://rajshahiaquatics.com",
   },
-  {
-    id: 4,
-    color: "from-purple-300 to-red-300",
-    title: "Dhaka Dosts Social Media React App ",
-    desc: "Made with the MERN Stack . It is more like a sample of my CRUD capabilites. You can make a profile and do basic posting and commenting",
-    img: "/dhakadosts.mp4",
-    link: "https://dhakadosts.vercel.app/",
-  },
-  {
-    id: 5,
-    color: "from-purple-300 to-red-300",
-    title: "University Management System ",
-    desc: "Made with Next.js, TailwindCSS and MySQL. It is a simple site for managing a university.  It has a dashboard for the admin and a login system. It is a simple site for managing a university. It has a dashboard for the admin and a login system.",
-    img: "/mbhec.mp4",
-    link: "https://mbhec.edu.bd/",
-  },
     {
-    id: 5,
+    id: 4,
     color: "from-purple-300 to-red-300",
     title: "Patient Management System ",
     desc: "Built a patient management system using Next.js and TypeScript.Features include patient records management, appointment scheduling, and real-time updates. Designed with a modern UI/UX and responsive layout",
     img: "/phs.mp4",
+    image:'',
     link: "https://patentmanagement.vercel.app"
   },
   
   {
-    id: 1,
+    id: 5,
     color: "from-red-300 to-blue-300",
     title: "Mern News Site",
     desc: "I used a MERN Stack to create a news site with full CRUD functionality and authentication. I used a classic red, black and white palette to accent the site. We have diferrent categories and subcategories to navigate through the site. I set up an API to get weather updates on Rajshahi since that is where the majority of our reader are based on.",
     img: "/natunprovat.mp4",
+      image:'',
     link: "https://www.natunprovat.com",
 
   },
   {
-    id: 3,
-    color: "from-violet-300 to-purple-300",
-    title: "Next.js Tour Booking App",
-    desc: "It is a simple site for booking tours to visit the Sundarbans, Made with Next.js, TailwindCSS and MySQL, my favourite combo. The customer tracks the booking status thgrough order Id's. It was one my first sites so it is very dear to me. The client does not use it anymore.",
-    img: "/insanat.mp4",
-    link: "https://insaniat.vercel.app/",
+    id: 6,
+    color: "from-purple-300 to-red-300",
+    title: "Social Media  App ",
+    desc: "MERN stack app featuring user profiles, follow functionality, image-based posts, and customizable bios. Allows users to create personal profiles, connect with others, share content, and engage with the community.",
+    img: "/dhakadosts.mp4",
+    image:'',
+    link: "https://dhakadosts.vercel.app/",
   },
 ];
 
@@ -88,13 +97,22 @@ const PortfolioPage = () => {
                     {item.title}
                   </h1>
                   <div className="relative w-full h-56 md:w-[38vw] md:h-[40vh] ">
-                    <ReactPlayer 
+                    {item.img && <ReactPlayer 
                       url={item.img}
                       className='react-player'
                       width='100%'
                       height='100%'
                       controls={true}
-                    />
+                    />}
+                    {item.image && (
+                      <Image 
+                      src='/video call.JPG'
+                         width={400}
+                      height={200}
+                      className="w-full h-full"
+                      />)
+                    }
+                 
                   </div>
                   <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
